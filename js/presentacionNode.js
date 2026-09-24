@@ -1,1 +1,1 @@
-console.console("Pau Garcia Roman");
+console.log("Pau Garcia Roman");
