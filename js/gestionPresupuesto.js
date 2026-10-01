@@ -32,6 +32,9 @@ function CrearGasto(descripcion, valor) {
         return 'Gasto correspondiente a ' + this.descripcion + ' con valor ' + this.valor + ' €';
     };
 
+    this.actualizarDescripcion = function(nuevaDescripcion){
+        this.descripcion = nuevaDescripcion;
+    }
 }
 
 
