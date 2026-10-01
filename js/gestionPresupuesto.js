@@ -2,17 +2,25 @@
 'use strict';
 // TODO: Variable global
 
+let presupuesto = 0;
+function actualizarPresupuesto(valor) {
+    let numero = Number(valor);
 
-function actualizarPresupuesto() {
-    // TODO
+    if(isNaN(numero) || numero < 0){
+        console.error('ERROR... no es un numero o es negativo');
+        return -1;
+}
+    presupuesto = numero;
+    return presupuesto;
+    
 }
 
 function mostrarPresupuesto() {
-    // TODO
+    return 'Tu presupuesto actual es de ' + presupuesto + ' €';
 }
 
 function CrearGasto() {
-    // TODO
+   
 }
 
 // NO MODIFICAR A PARTIR DE AQUÍ: exportación de funciones y objetos creados para poder ejecutar los tests.
