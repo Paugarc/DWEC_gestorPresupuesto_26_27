@@ -3,6 +3,9 @@
 // TODO: Variable global
 
 let presupuesto = 0;
+let gastos = [];
+let idGasto = 0;
+
 function actualizarPresupuesto(valor) {
     let numero = Number(valor);
 
@@ -42,6 +45,8 @@ function CrearGasto(descripcion, valor) {
         }
     }
 }
+
+
 
 
 // NO MODIFICAR A PARTIR DE AQUÍ: exportación de funciones y objetos creados para poder ejecutar los tests.
