@@ -71,6 +71,14 @@ function CrearGasto(descripcion, valor, fecha, ...etiquetas) {
 
         return texto;
     }
+
+    this.actualizarFecha = function(fecha){
+        let fechaString = Date.parse(fecha);
+
+        if(!isNaN(fechaString)){
+            this.fecha = fechaString;
+        }
+    }
 }
 
 
