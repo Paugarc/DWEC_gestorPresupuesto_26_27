@@ -74,8 +74,13 @@ function anyadirGasto(gasto){
     gastos.push(gasto);
 }
 
-function borrarGasto(){
-
+function borrarGasto(id){
+    for(let i = 0; i < gastos.length; i++){
+        if(gastos[i].id == id){
+            gastos.splice(id);
+            break;
+        }
+    }
 }
 
 function calcularTotalGastos(){
