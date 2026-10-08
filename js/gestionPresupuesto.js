@@ -61,16 +61,17 @@ function CrearGasto(descripcion, valor, fecha, ...etiquetas) {
 
     this.anyadirEtiquetas(...etiquetas);
 
-    this.mostrarGastoCompleto = function(){
-        let texto = 'Gasto correspondiente a ' + this.descripcion + ' con valor ' + this.valor + ' €.\n' + 
-        'Fecha: ' + new Date(this.fecha).toLocaleString() + '\n Etiquetas: \n ';
-        
-        for (let etiqueta of this.etiquetas) {
-            texto += '- ' + etiqueta + '\n';
-        }
+   this.mostrarGastoCompleto = function() {
+    let texto = 'Gasto correspondiente a ' + this.descripcion + ' con valor ' + this.valor + ' €.\n' +
+        'Fecha: ' + new Date(this.fecha).toLocaleString() + '\n' +
+        'Etiquetas:\n';
 
-        return texto;
+    for (let etiqueta of this.etiquetas) {
+        texto += '- ' + etiqueta + '\n';
     }
+
+    return texto;
+}
 
     this.actualizarFecha = function(fecha){
         let fechaString = Date.parse(fecha);
