@@ -107,7 +107,7 @@ function anyadirGasto(gasto){
 function borrarGasto(id){
     for(let i = 0; i < gastos.length; i++){
         if(gastos[i].id == id){
-            gastos.splice(id);
+            gastos.splice(i, 1);
             break;
         }
     }
