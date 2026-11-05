@@ -19,4 +19,6 @@ gP.anyadirGasto(gasto4);
 gP.anyadirGasto(gasto5);
 gP.anyadirGasto(gasto6);
 
-gPW.mostrarDatoEnId("gastos-totales", gP.calcularTotalGastos())
+gPW.mostrarDatoEnId("gastos-totales", gP.calcularTotalGastos());
+
+gPW.mostrarDatoEnId("balance-total", gP.calcularBalance());
