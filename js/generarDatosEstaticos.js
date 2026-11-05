@@ -22,3 +22,9 @@ gP.anyadirGasto(gasto6);
 gPW.mostrarDatoEnId("gastos-totales", gP.calcularTotalGastos());
 
 gPW.mostrarDatoEnId("balance-total", gP.calcularBalance());
+
+let listadoGastos = gP.listarGastos();
+
+for(const tipoGasto of listadoGastos){
+    gPW.mostrarGastoWeb("listado-gastos-completo", tipoGasto);
+}
