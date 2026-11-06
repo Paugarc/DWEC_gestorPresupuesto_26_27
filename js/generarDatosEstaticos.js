@@ -54,3 +54,12 @@ let valoresFiltrados =  gP.filtrarGastos({
 for(const valores of valoresFiltrados){
     gPW.mostrarGastoWeb("listado-gastos-filtrado-3", valores)
 }
+
+let gastosFiltrados = gP.filtrarGastos({
+    valorMaximo: 50,
+    etiquetasTiene: ["comida", "transporte"]
+});
+
+for (const gasto of gastosFiltrados) {
+    gPW.mostrarGastoWeb("listado-gastos-filtrado-4", gasto);
+}
