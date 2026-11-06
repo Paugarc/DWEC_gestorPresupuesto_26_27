@@ -28,3 +28,12 @@ let listadoGastos = gP.listarGastos();
 for(const tipoGasto of listadoGastos){
     gPW.mostrarGastoWeb("listado-gastos-completo", tipoGasto);
 }
+
+let listadoGastoFecha = gP.filtrarGastos({
+    fechaDesde: "2021-09-01",
+    fechaHasta: "2021-09-30"
+});
+
+for(const gastoFecha of listadoGastoFecha){
+    gPW.mostrarGastoWeb("listado-gastos-filtrado1", gastoFecha)
+}
