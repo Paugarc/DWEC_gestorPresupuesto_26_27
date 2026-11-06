@@ -45,3 +45,12 @@ let listadoGastoSup = gP.filtrarGastos({
 for(const valor of listadoGastoSup){
     gPW.mostrarGastoWeb("listado-gastos-filtrado-2", valor)
 }
+
+let valoresFiltrados =  gP.filtrarGastos({
+    valorMinimo : 200,
+    etiquetasTiene : [seguros]
+});
+
+for(const valores of valoresFiltrados){
+    gPW.mostrarGastoWeb("listado-gastos-filtrado-3", valores)
+}
