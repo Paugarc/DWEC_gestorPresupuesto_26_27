@@ -35,5 +35,13 @@ let listadoGastoFecha = gP.filtrarGastos({
 });
 
 for(const gastoFecha of listadoGastoFecha){
-    gPW.mostrarGastoWeb("listado-gastos-filtrado1", gastoFecha)
+    gPW.mostrarGastoWeb("listado-gastos-filtrado-1", gastoFecha)
+}
+
+let listadoGastoSup = gP.filtrarGastos({
+   valorMinimo: 50 
+});
+
+for(const valor of listadoGastoSup){
+    gPW.mostrarGastoWeb("listado-gastos-filtrado-2", valor)
 }
