@@ -48,7 +48,7 @@ for(const valor of listadoGastoSup){
 
 let valoresFiltrados =  gP.filtrarGastos({
     valorMinimo : 200,
-    etiquetasTiene : [seguros]
+    etiquetasTiene : ["seguros"]
 });
 
 for(const valores of valoresFiltrados){
