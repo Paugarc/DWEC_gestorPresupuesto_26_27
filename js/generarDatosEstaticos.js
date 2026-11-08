@@ -71,3 +71,7 @@ gPW.mostrarGastosAgrupadosWeb("agrupacion-dia", gastosPorDia, "dia");
 let gastosPorMes = gP.agruparGastos("mes");
 
 gPW.mostrarGastosAgrupadosWeb("agrupacion-mes", gastosPorMes, "mes");
+
+let gastosPorAnyo = gP.agruparGastos("anyo");
+
+gPW.mostrarGastosAgrupadosWeb("agrupacion-anyo", gastosPorAnyo, "anyo");
