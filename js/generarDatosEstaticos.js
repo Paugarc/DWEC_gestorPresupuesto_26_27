@@ -63,3 +63,7 @@ let gastosFiltrados = gP.filtrarGastos({
 for (const gasto of gastosFiltrados) {
     gPW.mostrarGastoWeb("listado-gastos-filtrado-4", gasto);
 }
+
+let gastosPorDia = gP.agruparGastos("dia");
+
+gPW.mostrarGastosAgrupadosWeb("agrupacion-dia", gastosPorDia, "dia");
