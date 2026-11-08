@@ -67,3 +67,7 @@ for (const gasto of gastosFiltrados) {
 let gastosPorDia = gP.agruparGastos("dia");
 
 gPW.mostrarGastosAgrupadosWeb("agrupacion-dia", gastosPorDia, "dia");
+
+let gastosPorMes = gP.agruparGastos("mes");
+
+gPW.mostrarGastosAgrupadosWeb("agrupacion-mes", gastosPorMes, "mes");
